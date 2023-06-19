@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding-bottom: 3rem;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.gameSection {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div::before {
+    content: "\200B";
+    visibility: hidden;
+}
+
+.square {
+    border: 5px solid black;
+    font-size: 10rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.col1 {
+    border-left: 0;
+}
+
+.row1 {
+    border-top: 0;
+}
+
+.col3 {
+    border-right: 0;
+}
+
+.row3 {
+    border-bottom: 0;
+}
+
+.result {
+    text-align: center;
+    font-size: 5rem;
+}
